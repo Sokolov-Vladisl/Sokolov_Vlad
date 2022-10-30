@@ -11,7 +11,7 @@
 void main()
 {
   TDynamicMatrix<int> a(5), b(5), c(5);
-  int i, j;
+  int i=0, j=0;
 
   setlocale(LC_ALL, "Russian");
   cout << "Тестирование класс работы с матрицами"
