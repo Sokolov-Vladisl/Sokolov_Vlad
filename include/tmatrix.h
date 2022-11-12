@@ -77,6 +77,7 @@ public:
 
   TDynamicVector& operator=(TDynamicVector&& v) noexcept
   {
+	  delete[] pMem;
 	  pMem = nullptr;
 	  sz = 0;
 	  swap(*this, v);
@@ -206,6 +207,9 @@ public:
       ostr << v.pMem[i] << ' '; // требуется оператор<< для типа T
     return ostr;
   }
+
+
+
 };
 
 
@@ -319,6 +323,21 @@ public:
   }
 
   size_t size() const noexcept { return sz; }
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
 
 };
 
