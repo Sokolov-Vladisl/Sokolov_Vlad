@@ -75,82 +75,35 @@ void main()
 		  cout <<endl<< "    матрица a :" << endl << endl;
 		  for (int i = 0; i < N; i++)
 		  {
-			  cout << i + 1 << "-ая СТРОКА:  ";
 			  for (int j = 0; j < N; j++)
 			  {
 				  a.at(i, j) = rand_between(A,B);
 				  b.at(i, j) = rand_between(A, B);						
-				  cout << "  "<<a.at(i, j)<<"  ";
+				  cout <<a.at(i, j)<<"   ";
 			  }
-			  cout << endl<<endl<<endl;
+			  cout << endl;
 		  }
-		  cout << endl<<endl<<endl<<endl<<endl<<endl<<endl << "    матрица b :" << endl << endl;
-		  for (int i = 0; i < N; i++)
-		  {
-			  cout << i + 1 << "-ая СТРОКА:  ";
-			  for (int j = 0; j < N; j++)
-			  {
-				  cout << "  " << b.at(i, j) << "  ";
-			  }
-			  cout << endl << endl << endl;
-		  }
+		  cout << endl << endl << endl << endl  << "    матрица b :" << endl << endl << b;
+
   }
   if (choice == 2)
   {
-
+	  
 	  cout << endl << "   Первая матрица :" << endl << endl;
-	  for (int i = 0; i < N; i++)
-	  {
-		  cout << i + 1 << "-ая СТРОКА:  "<<endl;
-		  for (int j = 0; j < N; j++)
-		  {
-			  cin>> a.at(i, j);
-		  }
-		  cout << endl << endl << endl;
-	  }
+	  cin >> a;
 	  cout << endl << endl << endl << endl << endl << endl << endl << "   Вторая матрица :" << endl << endl;
-	  for (int i = 0; i < N; i++)
-	  {
-		  cout << i + 1 << "-ая СТРОКА:  "<<endl;
-		  for (int j = 0; j < N; j++)
-		  {
-			  cin >> b.at(i, j);
-		  }
-		  cout << endl << endl << endl;
-	  }
+      cin >> b;
 
 	  system("cls");
 
-	  cout << endl << "    матрица a :" << endl << endl;
-	  for (int i = 0; i < N; i++)
-	  {
-		  cout << i + 1 << "-ая СТРОКА:  ";
-		  for (int j = 0; j < N; j++)
-		  {
-			  cout << "  " << a.at(i, j) << "  ";
-		  }
-		  cout << endl << endl << endl;
-	  }
+	  cout << endl << "    матрица a :" << endl << endl << a;
+	  cout << endl << endl << endl << endl << endl << endl << endl << "    матрица b :" << endl << endl << b;
 
-	  cout << endl << endl << endl << endl << endl << endl << endl << "    матрица b :" << endl << endl;
-	  for (int i = 0; i < N; i++)
-	  {
-		  cout << i + 1 << "-ая СТРОКА:  ";
-		  for (int j = 0; j < N; j++)
-		  {
-			  cout << "  " << b.at(i, j) << "  ";
-		  }
-		  cout << endl << endl << endl;
-	  }
   }
   if(choice!=1 && choice!=2)
   {
 	  work = false;
   }
-
-
-
-  double val;
 
   while (work)
   {
@@ -174,16 +127,8 @@ void main()
 		  cout <<endl<< " 1) a=a*b   " << endl<<endl;
 		  a=a*b;
 
-		  cout << endl << "   матрица a :" << endl << endl;
-		  for (int i = 0; i < N; i++)
-		  {
-			  cout << i + 1 << "-ая СТРОКА:  ";
-			  for (int j = 0; j < N; j++)
-			  {
-				  cout << "  " << a.at(i, j) << "  ";
-			  }
-			  cout << endl << endl << endl;
-		  }
+		  cout << endl << "   матрица a :" << endl << endl << a << endl << endl;
+		  
 		  system("pause");
 		  system("cls");
 	  }
@@ -192,16 +137,8 @@ void main()
 		  cout << endl << " 1) a=b*a   " << endl << endl;
 		  a = b * a;
 
-		  cout << endl << "   матрица a :" << endl << endl;
-		  for (int i = 0; i < N; i++)
-		  {
-			  cout << i + 1 << "-ая СТРОКА:  ";
-			  for (int j = 0; j < N; j++)
-			  {
-				  cout << "  " << a.at(i, j) << "  ";
-			  }
-			  cout << endl << endl << endl;
-		  }
+		  cout << endl << "   матрица a :" << endl << endl << a << endl << endl;
+		  
 		  system("pause");
 		  system("cls");
 	  }
@@ -210,16 +147,8 @@ void main()
 		  cout << endl << " 1) a=a+b   " << endl << endl;
 		  a = a+b;
 
-		  cout << endl << "   матрица a :" << endl << endl;
-		  for (int i = 0; i < N; i++)
-		  {
-			  cout << i + 1 << "-ая СТРОКА:  ";
-			  for (int j = 0; j < N; j++)
-			  {
-				  cout << "  " << a.at(i, j) << "  ";
-			  }
-			  cout << endl << endl << endl;
-		  }
+		  cout << endl << "   матрица a :" << endl << endl << a << endl << endl;
+		  
 		  system("pause");
 		  system("cls");
 	  }
@@ -228,16 +157,8 @@ void main()
 		  cout << endl << " 1) a=a-b   " << endl << endl;
 		  a = a - b;
 
-		  cout << endl << "   матрица a :" << endl << endl;
-		  for (int i = 0; i < N; i++)
-		  {
-			  cout << i + 1 << "-ая СТРОКА:  ";
-			  for (int j = 0; j < N; j++)
-			  {
-				  cout << "  " << a.at(i, j) << "  ";
-			  }
-			  cout << endl << endl << endl;
-		  }
+		  cout << endl << "   матрица a :" << endl << endl << a << endl << endl;
+		 
 		  system("pause");
 		  system("cls");
 	  }
@@ -246,16 +167,8 @@ void main()
 		  cout << endl << " 1) a=a*a   " << endl << endl;
 		  a = a * a;
 
-		  cout << endl << "   матрица a :" << endl << endl;
-		  for (int i = 0; i < N; i++)
-		  {
-			  cout << i + 1 << "-ая СТРОКА:  ";
-			  for (int j = 0; j < N; j++)
-			  {
-				  cout << "  " << a.at(i, j) << "  ";
-			  }
-			  cout << endl << endl << endl;
-		  }
+		  cout << endl << "   матрица a :" << endl << endl << a << endl << endl;
+		  
 		  system("pause");
 		  system("cls");
 	  }
@@ -264,16 +177,8 @@ void main()
 		  cout << endl << " 1) b=b*b   " << endl << endl;
 		  b = b * b;
 
-		  cout << endl << "   матрица b :" << endl << endl;
-		  for (int i = 0; i < N; i++)
-		  {
-			  cout << i + 1 << "-ая СТРОКА:  ";
-			  for (int j = 0; j < N; j++)
-			  {
-				  cout << "  " << b.at(i, j) << "  ";
-			  }
-			  cout << endl << endl << endl;
-		  }
+		  cout << endl << "   матрица b :" << endl << endl << b << endl << endl;
+		 
 		  system("pause");
 		  system("cls");
 	  }
@@ -282,42 +187,17 @@ void main()
 		  cout << endl << "a = (a + b) * b - a" << endl << endl;
 		  a = (a + b) * b - a;
 
-		  cout << endl << "   матрица a :" << endl << endl;
-		  for (int i = 0; i < N; i++)
-		  {
-			  cout << i + 1 << "-ая СТРОКА:  ";
-			  for (int j = 0; j < N; j++)
-			  {
-				  cout << "  " << a.at(i, j) << "  ";
-			  }
-			  cout << endl << endl << endl;
-		  }
+		  cout << endl << "   матрица a :" << endl << endl << a << endl << endl;
+		  
 		  system("pause");
 		  system("cls");
 	  }
 	  if (choice == 8)
 	  {
 		  
-		  cout << endl << "   матрица a :" << endl << endl;
-		  for (int i = 0; i < N; i++)
-		  {
-			  cout << i + 1 << "-ая СТРОКА:  ";
-			  for (int j = 0; j < N; j++)
-			  {
-				  cout << "  " << a.at(i, j) << "  ";
-			  }
-			  cout << endl << endl << endl;
-		  }
-		  cout << endl << "   матрица b :" << endl << endl;
-		  for (int i = 0; i < N; i++)
-		  {
-			  cout << i + 1 << "-ая СТРОКА:  ";
-			  for (int j = 0; j < N; j++)
-			  {
-				  cout << "  " << b.at(i, j) << "  ";
-			  }
-			  cout << endl << endl << endl;
-		  }
+		  cout << endl << "   матрица a :" << endl << endl << a << endl << endl;
+		  cout << endl << "   матрица b :" << endl << endl << b << endl << endl;
+		  
 		  system("pause");
 		  system("cls");
 	  }
